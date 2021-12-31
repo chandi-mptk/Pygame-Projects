@@ -50,6 +50,9 @@ class Player(pygame.sprite.Sprite):
         if self.rect.bottom >= SCREEN_HEIGHT:
             self.rect.bottom = SCREEN_HEIGHT
 
+    def restart(self):
+        self.rect = self.surf.get_rect(center=(0, SCREEN_HEIGHT / 2))
+
 
 # Define the enemy object by extending pygame.sprite.Sprite
 # The surface you draw on the screen is now an attribute of 'enemy'
@@ -106,6 +109,9 @@ pygame.init()
 # Set up the clock for a decent frame rate
 clock = pygame.time.Clock()
 
+# Score Board Font
+FONT = pygame.font.Font('freesansbold.ttf', 15)
+
 # Load and play background music
 # Sound source: http://ccmixter.org/files/Apoxode/59262
 # License: https://creativecommons.org/licenses/by/3.0/
@@ -140,6 +146,8 @@ all_sprites.add(player)
 
 # Main Loop State Variable
 running = True
+
+life = 10
 
 # Main Loop
 while running:
@@ -195,10 +203,21 @@ while running:
             # move_up_sound.stop()
             # move_down_sound.stop()
             # collision_sound.play()
-
+            life -= 1
             # If so, then remove the player and stop the loop
-            player.kill()
-            running = False
+            if life == 0:
+                player.kill()
+                running = False
+            else:
+                enemies.empty()
+                clouds.empty()
+                all_sprites.empty()
+                player.restart()
+                all_sprites.add(player)
+
+        score = FONT.render(f"Life : {life}", True, (255, 0, 0), (0, 255, 0))
+        scoreRect = score.get_rect(topright=(SCREEN_WIDTH - 50, 50))
+        screen.blit(score, scoreRect)
 
         # Update the display
         pygame.display.flip()
