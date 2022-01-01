@@ -4,6 +4,12 @@ Some Difference could be found in my file from the original.
 ## Basics
 
 ### 1. Basic-T1.py -  Web address https://www.geeksforgeeks.org/getting-started-with-pygame
+### 2. Basic-T2.py -  Web address https://www.geeksforgeeks.org/getting-started-with-pygame
+### 3. Basic-T3.py -  Web address https://www.geeksforgeeks.org/getting-started-with-pygame
+##------------------------------------------------------------------------------------------------
+### 4. Basic-T4.py -  Web address https://coderslegacy.com/python/python-pygame-tutorial/
+
+##-------------------------------------------------------------------------------------------
 
 ## Advanced
 
