@@ -31,10 +31,10 @@ class Player(pygame.sprite.Sprite):
     def update(self, pressed_key):
         if pressed_keys[K_UP]:
             self.rect.move_ip(0, -15)
-            # move_up_sound.play()
+            move_up_sound.play()
         if pressed_keys[K_DOWN]:
             self.rect.move_ip(0, 15)
-            # move_down_sound.play()
+            move_down_sound.play()
         if pressed_keys[K_LEFT]:
             self.rect.move_ip(-15, 0)
         if pressed_keys[K_RIGHT]:
@@ -109,22 +109,8 @@ pygame.init()
 # Set up the clock for a decent frame rate
 clock = pygame.time.Clock()
 
-# Score Board Font
-FONT = pygame.font.Font('freesansbold.ttf', 15)
-
-# Load and play background music
-# Sound source: http://ccmixter.org/files/Apoxode/59262
-# License: https://creativecommons.org/licenses/by/3.0/
-# pygame.mixer.music.load("Apoxode_-_Electric_1.mp3")
-# pygame.mixer.music.play(loops=-1)
-
-# Load all sound files
-# Sound sources: Jon Fincher
-# move_up_sound = pygame.mixer.Sound("Rising_putter.ogg")
-# move_down_sound = pygame.mixer.Sound("Falling_putter.ogg")
-# collision_sound = pygame.mixer.Sound("Collision.ogg")
-
-# Screen Initialise
+# Create the screen object
+# The size is determined by the constant SCREEN_WIDTH and SCREEN_HEIGHT
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 # Create a custom event for adding a new enemy
@@ -143,6 +129,26 @@ enemies = pygame.sprite.Group()
 clouds = pygame.sprite.Group()
 all_sprites = pygame.sprite.Group()
 all_sprites.add(player)
+
+# Score Board Font
+FONT = pygame.font.Font('freesansbold.ttf', 15)
+
+# Load and play background music
+# Sound source: http://ccmixter.org/files/Apoxode/59262
+# License: https://creativecommons.org/licenses/by/3.0/
+pygame.mixer.music.load('Sound/Apoxode_-_Electric_1.mp3')
+pygame.mixer.music.play(loops=-1)
+
+# Load all sound files
+# Sound sources: Jon Fincher
+move_up_sound = pygame.mixer.Sound('Sound/Rising_putter.ogg')
+move_down_sound = pygame.mixer.Sound('Sound/Falling_putter.ogg')
+collision_sound = pygame.mixer.Sound('Sound/Collision.ogg')
+
+# Set the base volume for all sounds
+move_up_sound.set_volume(0.5)
+move_down_sound.set_volume(0.5)
+collision_sound.set_volume(0.5)
 
 # Main Loop State Variable
 running = True
@@ -200,9 +206,9 @@ while running:
         # Check if any enemies have collided with the player
         if pygame.sprite.spritecollideany(player, enemies):
             # Stop any moving sounds and play the collision sound
-            # move_up_sound.stop()
-            # move_down_sound.stop()
-            # collision_sound.play()
+            move_up_sound.stop()
+            move_down_sound.stop()
+            collision_sound.play()
             life -= 1
             # If so, then remove the player and stop the loop
             if life == 0:
