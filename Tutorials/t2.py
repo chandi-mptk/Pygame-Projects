@@ -136,14 +136,14 @@ FONT = pygame.font.Font('freesansbold.ttf', 15)
 # Load and play background music
 # Sound source: http://ccmixter.org/files/Apoxode/59262
 # License: https://creativecommons.org/licenses/by/3.0/
-pygame.mixer.music.load('Sound/Apoxode_-_Electric_1.mp3')
+pygame.mixer.music.load('Sounds/Apoxode_-_Electric_1.mp3')
 pygame.mixer.music.play(loops=-1)
 
 # Load all sound files
 # Sound sources: Jon Fincher
-move_up_sound = pygame.mixer.Sound('Sound/Rising_putter.ogg')
-move_down_sound = pygame.mixer.Sound('Sound/Falling_putter.ogg')
-collision_sound = pygame.mixer.Sound('Sound/Collision.ogg')
+move_up_sound = pygame.mixer.Sound('Sounds/Rising_putter.ogg')
+move_down_sound = pygame.mixer.Sound('Sounds/Falling_putter.ogg')
+collision_sound = pygame.mixer.Sound('Sounds/Collision.ogg')
 
 # Set the base volume for all sounds
 move_up_sound.set_volume(0.5)
