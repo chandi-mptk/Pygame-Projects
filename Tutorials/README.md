@@ -15,6 +15,7 @@ Some Difference could be found in my file from the original.
 
 ### 1. t1.py -  Web address https://www.javatpoint.com/pygame
 ### 2. t2.py -  Web address https://realpython.com/pygame-a-primer/#basic-game-design
+### 3. t3.py -  Web address https://coderslegacy.com/python/pygame-tutorial-part-2/
 
 
 
