@@ -23,7 +23,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Pygame Tutorial 2 - Show Image")
 
 # Set Image Variable
-image = pygame.image.load("Images/Basic-T2.png")
+image = pygame.image.load("Images/Backgrount.png")
 
 running = True
 
