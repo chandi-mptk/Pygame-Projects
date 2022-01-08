@@ -7,7 +7,7 @@ Some Difference could be found in my file from the original.
 ### 02. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter2.html - Drawing
 ### 03. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter2.html - Animation
 
-##------------------------------------------------------------------------------------------------
+#
 ## Basics Coding
 
 ### 1. Basic-T1.py -  Web address https://www.geeksforgeeks.org/getting-started-with-pygame
@@ -15,7 +15,7 @@ Some Difference could be found in my file from the original.
 ### 3. Basic-T3.py -  Web address https://www.geeksforgeeks.org/getting-started-with-pygame
 ### 4. Basic-T4.py -  Web address https://coderslegacy.com/python/python-pygame-tutorial/
 
-##-------------------------------------------------------------------------------------------
+#
 
 ## Advanced Coding
 
