@@ -3,9 +3,12 @@ Some Difference could be found in my file from the original.
 
 ## Tutorial with Explanation
 
-### 01. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter2.html - Hello World! 
-### 02. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter2.html - Drawing
-### 03. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter2.html - Animation
+### 01. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter2.html
+### - Hello World! 
+### 02. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter2.html
+### - Drawing
+### 03. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter2.html
+### - Animation
 
 #
 ## Basics Coding
