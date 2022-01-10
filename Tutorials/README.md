@@ -9,7 +9,12 @@ Some Difference could be found in my file from the original.
 ### - Drawing
 ### 03. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter2.html
 ### - Animation
-
+### 04. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter2.html
+### - Text Display
+### 05. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter2.html
+### - Playing Sounds
+### 06. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter3.html
+### - Memory Game
 #
 ## Basics Coding
 
