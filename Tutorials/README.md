@@ -15,6 +15,8 @@ Some Difference could be found in my file from the original.
 ### - Playing Sounds
 ### 06. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter3.html
 ### - Memory Game
+### 07. Tutorial with Explanation.py -  Web address https://inventwithpython.com/pygame/chapter4.html
+### - Memory Game
 #
 ## Basics Coding
 
